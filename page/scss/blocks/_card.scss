@@ -1,0 +1,13 @@
+.card {
+  --sidebar-width: 15rem;
+
+  padding: get-size("300");
+  border-radius: get-size("200");
+
+  &__image {
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
+    width: 100%;
+    height: auto;
+  }
+}

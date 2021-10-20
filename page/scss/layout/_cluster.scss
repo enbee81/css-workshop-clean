@@ -1,0 +1,7 @@
+.cluster {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: var(--cluster-justification, flex-start);
+  gap: var(--cluster-gap-vertical, var(--cluster-gap, 1rem))
+    var(--cluster-gap, 1rem);
+}

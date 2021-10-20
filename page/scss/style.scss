@@ -1,6 +1,18 @@
-body {
-  margin: 2rem;
-  background: #003;
-  color: #fff;
-  font-family: sans-serif;
-}
+@import "config";
+
+@import "../../node_modules/gorko/gorko.scss";
+
+@import "reset";
+
+// import layouts
+@import "layout/auto-grid";
+@import "layout/cluster";
+@import "layout/sidebar";
+@import "layout/stack";
+
+// import utilities
+@import "utilities/wrapper";
+
+// import blocks
+@import "blocks/card";
+@import "blocks/tag";
