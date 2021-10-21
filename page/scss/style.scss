@@ -1,8 +1,14 @@
+@import "config";
+@import "../../node_modules/gorko/gorko.scss";
 @import "reset";
 
 body {
   margin: 2rem;
-  background: #003;
-  color: #fff;
+  background: #f0f0f0;
   font-family: sans-serif;
 }
+
+// Composition
+@import "layout/cluster";
+@import "layout/sidebar";
+@import "layout/stack";
