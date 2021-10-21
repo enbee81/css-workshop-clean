@@ -1,0 +1,4 @@
+# Needed because of inserted space, that is not wanted
+# language-switcher.html
+*.html
+*.scss

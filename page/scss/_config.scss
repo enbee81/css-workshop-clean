@@ -78,30 +78,21 @@ $gorko-config: (
   ),
   "font": (
     "items": (
-      "base": "Arial, sans-serif",
+      "base": "'Roboto', Arial, sans-serif",
     ),
     "output": "standard",
     "property": "font-family",
   ),
-  "gap-top": (
-    "items": $gorko-size-scale,
+  "ratio": (
+    // Additional styles in ratio utility
+    "items":
+      (
+        "1-1": "1 / 1",
+        "3-4": "3 / 4",
+        "4-3": "4 / 3",
+      ),
     "output": "standard",
-    "property": "margin-top",
-  ),
-  "gap-right": (
-    "items": $gorko-size-scale,
-    "output": "standard",
-    "property": "margin-right",
-  ),
-  "gap-bottom": (
-    "items": $gorko-size-scale,
-    "output": "standard",
-    "property": "margin-bottom",
-  ),
-  "gap-left": (
-    "items": $gorko-size-scale,
-    "output": "standard",
-    "property": "margin-left",
+    "property": "aspect-ratio",
   ),
   "pad-top": (
     "items": $gorko-size-scale,

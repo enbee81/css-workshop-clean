@@ -1,69 +1,87 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>CSS-Workshop</title>
-    <link rel="stylesheet" href="css/style.css" />
-  </head>
-  <body class="font-base bg-gray-100">
-    <div class="wrapper | stack-700">
-      <h1>CSS Workshop</h1>
-      <div class="auto-grid">
-        <article class="card | sidebar-left bg-white">
-          <div>
-            <img
-              class="card__image"
-              src="https://images.unsplash.com/photo-1456327102063-fb5054efe647?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxNDU4OXwwfDF8cmFuZG9tfHx8fHx8fHx8MTYzMzY5OTE3Nw&ixlib=rb-1.2.1&q=80&w=400"
-              alt=""
-            />
-          </div>
-          <div class="stack-100">
-            <h2 class="color-gray-900">Headline</h2>
-            <p class="color-gray-700">
-              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fugit
-              assumenda facere placeat nobis nisi aperiam quisquam enim velit,
-              tempora commodi soluta impedit libero tenetur sequi officia a aut
-              neque tempore.
-            </p>
-            <ul
-              class="cluster | my-stack-space-300"
-              style="--cluster-gap: 0.5em"
-            >
-              <li class="tag | text-300 bg-blue-200 color-blue-800">Eins</li>
-              <li class="tag | text-300 bg-blue-200 color-blue-800">Zwei</li>
-              <li class="tag | text-300 bg-blue-200 color-blue-800">Drei</li>
-            </ul>
-          </div>
-        </article>
-        <article class="card | sidebar-left bg-white">
-          <div>
-            <img
-              class="card__image"
-              src="https://images.unsplash.com/photo-1456327102063-fb5054efe647?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxNDU4OXwwfDF8cmFuZG9tfHx8fHx8fHx8MTYzMzY5OTE3Nw&ixlib=rb-1.2.1&q=80&w=400"
-              alt=""
-            />
-          </div>
-          <div class="stack-100">
-            <h2 class="color-gray-900">Headline</h2>
-            <p class="color-gray-700">
-              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fugit
-              assumenda facere placeat nobis nisi aperiam quisquam enim velit,
-              tempora commodi soluta impedit libero tenetur sequi officia a aut
-              neque tempore.
-            </p>
-            <ul
-              class="cluster | my-stack-space-300"
-              style="--cluster-gap: 0.5em"
-            >
-              <li class="tag | text-300 bg-blue-200 color-blue-800">Eins</li>
-              <li class="tag | text-300 bg-blue-200 color-blue-800">Zwei</li>
-              <li class="tag | text-300 bg-blue-200 color-blue-800">Drei</li>
-            </ul>
-          </div>
-        </article>
-      </div>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>CSS-Workshop</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+
+<body class="font-base bg-gray-100">
+  <div class="wrapper | stack-700">
+    <h1>CSS Workshop</h1>
+    <div class="auto-grid" style="--auto-grid-min-size: 24rem;">
+      <article class="card | sidebar-left bg-white" style="--sidebar-width: 15rem">
+        <div>
+          <img class="ratio-1-1"
+            src="https://images.unsplash.com/photo-1456327102063-fb5054efe647?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxNDU4OXwwfDF8cmFuZG9tfHx8fHx8fHx8MTYzMzY5OTE3Nw&ixlib=rb-1.2.1&q=80&w=400"
+            alt="" />
+        </div>
+        <div class="stack-100">
+          <h2 class="color-gray-900">Headline</h2>
+          <p class="color-gray-700 line-clamp" style="--line-count: 7;">
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fugit
+            assumenda facere placeat nobis nisi aperiam quisquam enim velit,
+            tempora commodi soluta impedit libero tenetur sequi officia a aut
+            neque tempore.
+          </p>
+          <ul class="cluster | my-stack-space-300" style="--cluster-gap: 0.5em">
+            <li class="tag | text-300 bg-blue-200 color-blue-800 weight-bold">Eins</li>
+            <li class="tag | text-300 bg-blue-200 color-blue-800 weight-bold">Zwei</li>
+            <li class="tag | text-300 bg-blue-200 color-blue-800 weight-bold">Drei</li>
+          </ul>
+        </div>
+      </article>
+      <article class="card | sidebar-left bg-white" style="--sidebar-width: 15rem">
+        <div>
+          <img class="ratio-1-1"
+            src="https://images.unsplash.com/photo-1456327102063-fb5054efe647?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxNDU4OXwwfDF8cmFuZG9tfHx8fHx8fHx8MTYzMzY5OTE3Nw&ixlib=rb-1.2.1&q=80&w=400"
+            alt="" />
+        </div>
+        <div class="stack-100">
+          <h2 class="color-gray-900">Headline</h2>
+          <p class="color-gray-700 line-clamp" style="--line-count: 7;">
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fugit
+            assumenda facere placeat nobis nisi aperiam quisquam enim velit,
+            tempora commodi soluta impedit libero tenetur sequi officia a aut
+            neque tempore.Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fugit
+            assumenda facere placeat nobis nisi aperiam quisquam enim velit,
+            tempora commodi soluta impedit libero tenetur sequi officia a aut
+            neque tempore.
+          </p>
+          <ul class="cluster | my-stack-space-300" style="--cluster-gap: 0.5em">
+            <li class="tag | text-300 bg-blue-200 color-blue-800">Eins</li>
+            <li class="tag | text-300 bg-blue-200 color-blue-800">Zwei</li>
+            <li class="tag | text-300 bg-blue-200 color-blue-800">Drei</li>
+          </ul>
+        </div>
+      </article>
+      <article class="card | sidebar-left bg-white" style="--sidebar-width: 15rem">
+        <div>
+          <img class="ratio-1-1"
+            src="https://images.unsplash.com/photo-1456327102063-fb5054efe647?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxNDU4OXwwfDF8cmFuZG9tfHx8fHx8fHx8MTYzMzY5OTE3Nw&ixlib=rb-1.2.1&q=80&w=400"
+            alt="" />
+        </div>
+        <div class="stack-100">
+          <h2 class="color-gray-900">Headline</h2>
+          <p class="color-gray-700 line-clamp" style="--line-count: 7;">
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fugit
+            assumenda facere placeat nobis nisi aperiam quisquam enim velit
+          </p>
+          <ul class="cluster | my-stack-space-300" style="--cluster-gap: 0.5em">
+            <li class="tag | text-300 bg-blue-200 color-blue-800">Eins</li>
+            <li class="tag | text-300 bg-blue-200 color-blue-800">Zwei</li>
+            <li class="tag | text-300 bg-blue-200 color-blue-800">Drei</li>
+          </ul>
+        </div>
+      </article>
     </div>
-  </body>
+  </div>
+</body>
+
 </html>
